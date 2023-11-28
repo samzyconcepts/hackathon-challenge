@@ -17,6 +17,7 @@ function toggleStore() {
     // Remove class of show from notification menu
     if (notificationMenu.classList.contains("show")) {
         notificationMenu.classList.remove("show");
+        notificationBell.ariaExpanded = "false";
     }
 
     if (isExpanded) {
@@ -78,6 +79,7 @@ function toggleNotification() {
     // Remove class of show from user store menu
     if (userStoreInfo.classList.contains("show")) {
         userStoreInfo.classList.remove("show");
+        userStoreBtn.ariaExpanded = "false";
     }
 
     if (isExpanded) {
